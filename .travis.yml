@@ -1,10 +1,29 @@
 language: elixir
-
 elixir:
-  - '1.0.5'
-otp_release: '17.4'
+  - 1.6.6
+  - 1.7.2
+  - 1.8.2
+  - 1.9.0
 
-jobs:
-  include:
-    - elixir: '1.2'
-      otp_release: '18.0'
+otp_release:
+  - 20.3
+  - 22.0
+
+matrix:
+  exclude:
+  - elixir: 1.6.6
+    otp_release: 22
+
+script:
+  - mix format --check-formatted
+  - mix deps.get
+
+  # check for any trailing whitespace
+  - "! git grep ' $' -- \\*.exs"
+
+sudo: false
+
+cache:
+  directories:
+    - _build
+    - deps
