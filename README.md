@@ -12,6 +12,9 @@ These implementations are for learning purposes. They may be less efficient than
 
 Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
+Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
+and published on [HexDocs](https://hexdocs.pm).
+
 ## Community Channel
 
 We're on [Gitter](https://gitter.im/TheAlgorithms)! Please join us.

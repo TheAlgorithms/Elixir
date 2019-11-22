@@ -17,6 +17,7 @@ matrix:
 script:
   - mix format --check-formatted
   - mix deps.get
+  - mix test
 
   # check for any trailing whitespace
   - "! git grep ' $' -- \\*.exs"
