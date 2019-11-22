@@ -16,7 +16,7 @@
 
 ## Data Structures
   * Linked List
-    * [Singly Linked List](https://github.com/TheAlgorithms/Python/blob/master/data_structures/linked_list/singly_linked_list.py)
+    * [Singly Linked List](https://github.com/TheAlgorithms/Elixir/blob/master/lib/data_structures/singly_linked_list.ex)
 
 ## Digital Image Processing
 
@@ -57,4 +57,3 @@
 ## Traversals
 
 ## Web Programming
-  
