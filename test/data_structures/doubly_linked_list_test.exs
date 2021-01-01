@@ -1,10 +1,10 @@
-defmodule Algorithims.DataStructures.DoublyLinkedListTest do
-  alias Algorithims.DataStructures.DoublyLinkedList
+defmodule Algorithms.DataStructures.DoublyLinkedListTest do
+  alias Algorithms.DataStructures.DoublyLinkedList
   alias DoublyLinkedList.LinkedList
   alias DoublyLinkedList.Node
 
   use ExUnit.Case
-  doctest Algorithims
+  doctest Algorithms
 
   describe "get_node/1" do
     test "it works when the list is empty" do

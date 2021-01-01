@@ -1,10 +1,10 @@
-defmodule Algorithims.DataStructures.SinglyLinkedListTest do
-  alias Algorithims.DataStructures.SinglyLinkedList
+defmodule Algorithms.DataStructures.SinglyLinkedListTest do
+  alias Algorithms.DataStructures.SinglyLinkedList
   alias SinglyLinkedList.LinkedList
   alias SinglyLinkedList.Node
 
   use ExUnit.Case
-  doctest Algorithims
+  doctest Algorithms
 
   describe "add_node_head/2" do
     test "it works when the list is empty" do
