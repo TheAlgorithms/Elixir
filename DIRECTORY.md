@@ -1,5 +1,4 @@
 
-
 ## Arithmetic Analysis
 
 ## Backtracking
@@ -17,6 +16,7 @@
 ## Data Structures
   * Linked List
     * [Singly Linked List](https://github.com/TheAlgorithms/Elixir/blob/master/lib/data_structures/singly_linked_list.ex)
+    * [Doubly Linked List](https://github.com/TheAlgorithms/Elixir/blob/master/lib/data_structures/doubly_linked_list.ex)
 
 ## Digital Image Processing
 
