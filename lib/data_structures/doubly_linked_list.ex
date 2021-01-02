@@ -1,4 +1,4 @@
-defmodule Algorithims.DataStructures.DoublyLinkedList do
+defmodule Algorithms.DataStructures.DoublyLinkedList do
   @moduledoc """
   Because of elixir's immutability, there is no true way of having fully cyclical, referential structures. You would have to make a copy of the list with each change, and account for the new reference.
   We will not write overly complex code to do that, and allow the user to understand the nuance here.

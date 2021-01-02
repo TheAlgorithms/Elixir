@@ -1,8 +1,8 @@
-defmodule AlgorithimsTest do
+defmodule AlgorithmsTest do
   use ExUnit.Case
-  doctest Algorithims
+  doctest Algorithms
 
   test "greets the world" do
-    assert Algorithims.hello() == :world
+    assert Algorithms.hello() == :world
   end
 end

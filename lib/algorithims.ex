@@ -1,6 +1,6 @@
-defmodule Algorithims do
+defmodule Algorithms do
   @moduledoc """
-  Documentation for Algorithims.
+  Documentation for Algorithms.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Algorithims do
 
   ## Examples
 
-      iex> Algorithims.hello()
+      iex> Algorithms.hello()
       :world
 
   """

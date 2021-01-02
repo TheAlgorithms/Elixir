@@ -1,4 +1,4 @@
-defmodule Algorithims.DataStructures.SinglyLinkedList do
+defmodule Algorithms.DataStructures.SinglyLinkedList do
   @moduledoc """
   Access for SinglyLinkedList is O(n)
   Search for SinglyLinkedList is O(n)
