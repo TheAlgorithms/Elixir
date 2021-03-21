@@ -10,7 +10,6 @@
 # [1, 2, 3, -1, -3, 5]              =>  [-3, 2, -1, 1, 3, 5]
 # [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]    =>  [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
 
-
 defmodule Algorithms.CodeWars.SortTheOdd do
   @moduledoc """
   line 30: Theta(n)
@@ -25,31 +24,30 @@ defmodule Algorithms.CodeWars.SortTheOdd do
   @doc """
   take a List and return the list with only odd numbers ordered
   """
-  @spec sort_the_odd(list(integer)):: list(integer)
+  @spec sort_the_odd(list(integer)) :: list(integer)
 
   def sort_the_odd(input_list) do
     input_list
-      |> Enum.filter(fn el -> Integer.is_odd(el) end)
-      |> Enum.sort()
-      |> merge(input_list, [])
-      |> Enum.reverse()
+    |> Enum.filter(fn el -> Integer.is_odd(el) end)
+    |> Enum.sort()
+    |> merge(input_list, [])
+    |> Enum.reverse()
   end
 
   @doc """
   recursive function: take sorted odd List, input List, result
   return the merged list with the even number fixed at the same index
   """
-  @spec merge(list(integer), list(integer), list(integer)):: list(integer)
+  @spec merge(list(integer), list(integer), list(integer)) :: list(integer)
 
   def merge([], input_list, result), do: Enum.reverse(input_list) |> Enum.concat(result)
   def merge(sorted_list, [], result), do: Enum.concat(sorted_list, result)
 
-  def merge([sorted_head | sorted_rest], [head | rest] , result) do
+  def merge([sorted_head | sorted_rest], [head | rest], result) do
     # i go on until i find an odd number
     case Integer.is_odd(head) do
-      :true -> merge(sorted_rest, rest, [sorted_head | result])
-      :false -> merge([sorted_head | sorted_rest], rest, [head | result])
+      true -> merge(sorted_rest, rest, [sorted_head | result])
+      false -> merge([sorted_head | sorted_rest], rest, [head | result])
     end
   end
-
 end

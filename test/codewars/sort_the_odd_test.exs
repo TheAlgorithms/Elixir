@@ -5,7 +5,6 @@ defmodule Algorithms.CodeWars.SortTheOddTest do
   doctest Algorithms
 
   describe "sort_the_odd/1 - example test cases" do
-
     test "example 1" do
       assert SortTheOdd.sort_the_odd([7, 1]) === [1, 7]
     end
@@ -19,14 +18,22 @@ defmodule Algorithms.CodeWars.SortTheOddTest do
     end
 
     test "example 4" do
-      assert SortTheOdd.sort_the_odd([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]) === [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
+      assert SortTheOdd.sort_the_odd([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]) === [
+               1,
+               8,
+               3,
+               6,
+               5,
+               4,
+               7,
+               2,
+               9,
+               0
+             ]
     end
-
   end
 
-
   describe "sort_the_odd/1 - additional test cases" do
-
     test "it works when the list is empty" do
       assert SortTheOdd.sort_the_odd([]) === []
     end
@@ -46,7 +53,5 @@ defmodule Algorithms.CodeWars.SortTheOddTest do
     test "it works without restrictions" do
       assert SortTheOdd.sort_the_odd([3, -1, -4, 5, -1, 8, 6]) === [-1, -1, -4, 3, 5, 8, 6]
     end
-
   end
-
 end
