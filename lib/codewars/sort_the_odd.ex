@@ -13,10 +13,12 @@
 
 defmodule Algorithms.CodeWars.SortTheOdd do
   @moduledoc """
-  line 24: Theta(n)
-  line 25: BigO(n log n)
-  line 26: Theta(n + m) - where n: input List length, m: number of odd in input List
-  line 27: BigO(1) - note: only for List
+  line 30: Theta(n)
+  line 31: BigO(n log n)
+  line 32: Theta(n + m) - where n: input List length, m: number of odd in input List
+  line 33: BigO(1) - note: only for List
+  -----------------------------
+  Complexity: BigO(n log n)
   """
   require Integer
 
