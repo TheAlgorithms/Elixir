@@ -1,4 +1,4 @@
-# Sorting: https://en.wikipedia.org/wiki/Merge_sort
+# Sorting: https://en.wikipedia.org/wiki/Quicksort
 #
 # You will be given an array of numbers, you have to sort numbers in ascending order
 # using quick sort algorithm.
