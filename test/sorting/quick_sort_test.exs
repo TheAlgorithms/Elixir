@@ -4,7 +4,7 @@ defmodule Algorithms.Sorting.QuicSortTest do
   use ExUnit.Case
   doctest Algorithms
 
-  describe "merge_sort/1 - example test cases" do
+  describe "quick_sort/1 - example test cases" do
     test "example 1" do
       assert QuickSort.quick_sort([7, 1]) === [1, 7]
     end
