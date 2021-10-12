@@ -61,7 +61,3 @@ defmodule Algorithms.Sorting.SelectionSort do
     end
   end
 end
-
-# Algorithms.Sorting.SelectionSort.selection_sort([100, 4, 10, 6, 9, 3])
-# IO.inspect(Algorithms.Sorting.SelectionSort.selection_sort([100, 4, 10, 6, 9, 3]))
-# => [1, 3, 4, 6, 9, 10]
