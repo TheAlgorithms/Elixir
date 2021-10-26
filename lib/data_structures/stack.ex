@@ -18,11 +18,11 @@ defmodule Algorithms.DataStructures.Stack do
   of data per stack.
   """
   @type t :: %__MODULE__{
-    stack: list()
-  }
+          stack: list()
+        }
 
   alias Algorithms.DataStructures.Stack
-  
+
   @doc """
   Pushes a given `val` to the stack
 
@@ -35,11 +35,10 @@ defmodule Algorithms.DataStructures.Stack do
 
   """
   def push(stack = %Stack{stack: stack_list}, val) do
-    stack =
-      %Stack{
-        stack |
-          stack: [val | stack_list]
-      }
+    stack = %Stack{
+      stack
+      | stack: [val | stack_list]
+    }
 
     {:ok, val, stack}
   end
@@ -89,11 +88,10 @@ defmodule Algorithms.DataStructures.Stack do
   end
 
   def pop(stack = %Stack{stack: [val | stack_list]}) do
-    stack = 
-      %Stack{
-        stack |
-          stack: stack_list
-      }
+    stack = %Stack{
+      stack
+      | stack: stack_list
+    }
 
     {:ok, val, stack}
   end
