@@ -51,6 +51,9 @@
 ## Searches
 
 ## Sorts
+ * [Bubblesort](https://en.wikipedia.org/wiki/Bubble_sort)
+ * [Mergesort](https://en.wikipedia.org/wiki/Merge_sort)
+ * [Quicksort](https://en.wikipedia.org/wiki/Quicksort)
 
 ## Strings
 
