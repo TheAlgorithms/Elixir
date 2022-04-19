@@ -12,10 +12,10 @@
 
 defmodule Algorithms.CodeWars.SortTheOdd do
   @moduledoc """
-  line 30: Theta(n)
-  line 31: BigO(n log n)
-  line 32: Theta(n + m) - where n: input List length, m: number of odd in input List
-  line 33: BigO(1) - note: only for List
+  line 31: Theta(n)
+  line 32: BigO(n log n)
+  line 33: Theta(n + m) - where n: input List length, m: number of odd in input List
+  line 34: BigO(1) - note: only for List
   -----------------------------
   Complexity: BigO(n log n)
   """
@@ -28,7 +28,7 @@ defmodule Algorithms.CodeWars.SortTheOdd do
 
   def sort_the_odd(input_list) do
     input_list
-    |> Enum.filter(fn el -> Integer.is_odd(el) end)
+    |> Enum.filter(&Integer.is_odd/1)
     |> Enum.sort()
     |> merge(input_list, [])
     |> Enum.reverse()
