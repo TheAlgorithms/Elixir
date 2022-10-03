@@ -2,7 +2,6 @@ defmodule Algorithms.CodeWars.SortTheOddTest do
   alias Algorithms.CodeWars.SortTheOdd
 
   use ExUnit.Case
-  doctest Algorithms
 
   describe "sort_the_odd/1 - example test cases" do
     test "example 1" do

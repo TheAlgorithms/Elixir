@@ -49,19 +49,20 @@ defmodule Algorithms.Sorting.BubbleSort do
 
   def bubble_pass([x]), do: [x]
 
-  def bubble_pass([ x1 | [x2 | xs]]) do
+  def bubble_pass([x1 | [x2 | xs]]) do
     case x1 < x2 do
-      true  -> Enum.concat([x1], bubble_pass(Enum.concat([x2], xs)))
+      true -> Enum.concat([x1], bubble_pass(Enum.concat([x2], xs)))
       false -> Enum.concat([x2], bubble_pass(Enum.concat([x1], xs)))
     end
   end
 
   @spec bubble_sort(list(Integer)) :: list(Integer)
-  def bubble_sort(lst) do 
+  def bubble_sort(lst) do
     bpassed = bubble_pass(lst)
+
     case bpassed == lst do
       true -> bpassed
-      false -> bubble_sort(bpassed) 
+      false -> bubble_sort(bpassed)
     end
   end
 end

@@ -2,7 +2,6 @@ defmodule Algorithms.Sorting.InsertionSortTest do
   alias Algorithms.Sorting.InsertionSort
 
   use ExUnit.Case
-  doctest Algorithms
 
   describe "insertion_sort/1 - Test cases" do
     test "test 1" do

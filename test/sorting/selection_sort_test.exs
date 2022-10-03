@@ -2,7 +2,6 @@ defmodule Algorithms.Sorting.SelectionSortTest do
   alias Algorithms.Sorting.SelectionSort
 
   use ExUnit.Case
-  doctest Algorithms
 
   describe "select_sort/1 - Test cases" do
     test "test 1" do

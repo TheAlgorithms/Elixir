@@ -4,7 +4,6 @@ defmodule Algorithms.DataStructures.SinglyLinkedListTest do
   alias SinglyLinkedList.Node
 
   use ExUnit.Case
-  doctest Algorithms
 
   describe "add_node_head/2" do
     test "it works when the list is empty" do
