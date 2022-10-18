@@ -1,6 +1,6 @@
 defmodule Algorithms.BitManipulation.SetBit do
 
-  use Bitwise
+  import Bitwise
 
   @moduledoc """
     Set the K-th bit of a given number (https://www.geeksforgeeks.org/set-k-th-bit-given-number/)
