@@ -2,7 +2,6 @@ defmodule Algorithms.DynamicProgramming.FibonacciTest do
   alias Algorithms.DynamicProgramming.Fibonacci
 
   use ExUnit.Case
-  doctest Algorithms
 
   describe "fibonacci/1 - example test cases" do
     test "fib 1" do
@@ -25,5 +24,4 @@ defmodule Algorithms.DynamicProgramming.FibonacciTest do
       assert Fibonacci.fibonacci(10) == 55
     end
   end
-
 end

@@ -2,7 +2,6 @@ defmodule Algorithms.Sorting.BubbleSortTest do
   alias Algorithms.Sorting.BubbleSort
 
   use ExUnit.Case
-  doctest Algorithms
 
   describe "bubble_sort/1 - example test cases" do
     test "example 1" do

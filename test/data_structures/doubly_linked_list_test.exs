@@ -4,7 +4,6 @@ defmodule Algorithms.DataStructures.DoublyLinkedListTest do
   alias DoublyLinkedList.Node
 
   use ExUnit.Case
-  doctest Algorithms
 
   describe "get_node/1" do
     test "it works when the list is empty" do

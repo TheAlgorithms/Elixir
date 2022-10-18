@@ -2,7 +2,6 @@ defmodule Algorithms.Sorting.MergeSortTest do
   alias Algorithms.Sorting.MergeSort
 
   use ExUnit.Case
-  doctest Algorithms
 
   describe "merge_sort/1 - example test cases" do
     test "example 1" do
