@@ -1,5 +1,4 @@
 defmodule Algorithms.BitManipulation.SetBit do
-
   import Bitwise
 
   @moduledoc """
@@ -21,7 +20,6 @@ defmodule Algorithms.BitManipulation.SetBit do
   """
 
   def setKthBit(number, k) do
-    number ||| (1 <<< k)
+    number ||| 1 <<< k
   end
-
 end

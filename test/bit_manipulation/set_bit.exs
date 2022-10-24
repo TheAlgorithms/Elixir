@@ -5,7 +5,6 @@ defmodule Algorithms.BitManipulation.SetBitTest do
   doctest Algorithms
 
   describe "Set Bit - example test cases" do
-
     test "Set bit number 0 in 1" do
       assert SetBit.setKthBit(1, 0) == 3
     end
@@ -21,7 +20,5 @@ defmodule Algorithms.BitManipulation.SetBitTest do
     test "Set bit number 2 in 10" do
       assert SetBit.setKthBit(10, 2) == 14
     end
-
   end
-
 end
